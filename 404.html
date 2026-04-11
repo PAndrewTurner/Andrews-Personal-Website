@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page Not Found · P. Andrew Turner</title>
+    <meta name="description" content="The page you're looking for doesn't exist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .error-page {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 32px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-page::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            filter: blur(80px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .error-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 640px;
+        }
+
+        .error-code {
+            font-family: var(--font-mono);
+            font-size: clamp(120px, 18vw, 220px);
+            font-weight: 800;
+            line-height: 0.9;
+            letter-spacing: -0.05em;
+            background: linear-gradient(135deg, #4d77d6 0%, #002FA7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        .error-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px;
+            background: rgba(240, 180, 41, 0.08);
+            border: 1px solid rgba(240, 180, 41, 0.3);
+            border-radius: 999px;
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--accent-gold);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .error-tag-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            box-shadow: 0 0 12px var(--accent-gold);
+        }
+
+        .error-title {
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .error-message {
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-meta {
+            margin-top: 60px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-subtle);
+            font-family: var(--font-mono);
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+        }
+
+        .error-meta code {
+            color: var(--accent-gold);
+        }
+
+        @media (max-width: 480px) {
+            .error-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">P. Andrew Turner</a>
+            <ul class="nav-menu">
+                <li><a href="/#about" class="nav-link">About</a></li>
+                <li><a href="/#skills" class="nav-link">Skills</a></li>
+                <li><a href="/#projects" class="nav-link">Projects</a></li>
+                <li><a href="/#writing" class="nav-link">Writing</a></li>
+                <li><a href="/#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="error-page">
+        <div class="error-content">
+            <div class="error-tag">
+                <span class="error-tag-dot"></span>
+                Reconciliation Failed
+            </div>
+            <div class="error-code">404</div>
+            <h1 class="error-title">This page didn't balance.</h1>
+            <p class="error-message">
+                Looks like you've found a route that doesn't exist on the books. The page you're looking for may have been moved, renamed, or never existed in the first place.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Return Home</a>
+                <a href="/#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="error-meta">
+                Status: <code>HTTP 404</code> &nbsp;·&nbsp; Variance: <code>1 page</code> &nbsp;·&nbsp; Action: <code>Investigate</code>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-name">Paul Andrew Turner Jr.</div>
+            <div class="footer-copy">© <span id="year"></span> — Built with rigor and care.</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
