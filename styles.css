@@ -773,6 +773,92 @@ body {
 }
 
 /* ========================================
+   Honors & Affiliations
+   ======================================== */
+.honors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.honors-column {
+    min-width: 0;
+}
+
+.honor-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.honor-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px 26px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    transition: all 0.3s var(--ease);
+}
+
+.honor-item:hover {
+    border-color: var(--border);
+    transform: translateX(4px);
+    background: var(--bg-tertiary);
+}
+
+.honor-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(240, 180, 41, 0.08);
+    border: 1px solid rgba(240, 180, 41, 0.25);
+    border-radius: 6px;
+    color: var(--accent-gold);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.honors-column:nth-child(2) .honor-icon {
+    background: rgba(0, 47, 167, 0.12);
+    border-color: var(--border);
+    color: #4d77d6;
+}
+
+.honor-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.honor-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.35;
+    margin-bottom: 3px;
+}
+
+.honor-org {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.honor-year {
+    display: inline-block;
+    margin-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent-gold);
+    letter-spacing: 0.05em;
+}
+
+/* ========================================
    Projects
    ======================================== */
 .projects-grid {
@@ -1140,12 +1226,38 @@ body {
     }
 
     .hero-visual {
-        max-width: 360px;
+        max-width: 420px;
         margin: 0 auto;
+        aspect-ratio: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 12px;
+    }
+
+    .headshot-frame {
+        flex: 0 0 100%;
+        width: 260px;
+        height: 260px;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .floating-stat {
+        position: static;
+        animation: none;
+        flex: 1 1 auto;
+        max-width: calc(50% - 8px);
+        text-align: center;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .honors-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .writing-card {
@@ -1205,17 +1317,6 @@ body {
         display: none;
     }
 
-    .floating-stat {
-        padding: 12px 16px;
-    }
-
-    .stat-num {
-        font-size: 18px;
-    }
-
-    .stat-1 { left: 0; }
-    .stat-2 { right: 0; }
-
     .hero-cta {
         flex-direction: column;
         align-items: stretch;
@@ -1253,12 +1354,35 @@ body {
     }
 
     .hero-tagline {
-        font-size: 15px;
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 10px;
+        justify-content: flex-start;
+        align-items: center;
+        line-height: 1.4;
     }
 
     .divider {
-        display: block;
-        text-align: center;
-        margin: 4px 0;
+        margin: 0;
+        color: var(--accent-gold);
+        font-weight: 700;
+    }
+
+    .headshot-frame {
+        width: 220px;
+        height: 220px;
+    }
+
+    .floating-stat {
+        padding: 10px 14px;
+    }
+
+    .stat-num {
+        font-size: 16px;
+    }
+
+    .stat-label {
+        font-size: 10px;
     }
 }
