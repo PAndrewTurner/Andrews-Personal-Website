@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 — Page Not Found · P. Andrew Turner</title>
     <meta name="description" content="The page you're looking for doesn't exist.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 — Page Not Found · P. Andrew Turner">
+    <meta property="og:description" content="The page you're looking for doesn't exist.">
+    <meta property="og:url" content="https://pandrewturner.com/404">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260411">
+    <link rel="stylesheet" href="styles.css?v=20260411g">
     <style>
         body {
             min-height: 100vh;
@@ -135,17 +146,25 @@
     <div class="bg-grid"></div>
 
     <!-- Navigation -->
-    <nav class="navbar scrolled">
+    <a href="/" class="skip-to-content">Skip to content</a>
+
+    <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="/" class="nav-logo">P. Andrew Turner</a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="/#about" class="nav-link">About</a></li>
                 <li><a href="/#skills" class="nav-link">Skills</a></li>
+                <li><a href="/#honors" class="nav-link">Honors</a></li>
                 <li><a href="/#projects" class="nav-link">Projects</a></li>
                 <li><a href="/#writing" class="nav-link">Writing</a></li>
                 <li><a href="/personal.html" class="nav-link">Beyond Work</a></li>
                 <li><a href="/#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -179,6 +198,15 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        // Mobile nav toggle
+        var toggle = document.getElementById('nav-toggle');
+        var menu = document.getElementById('nav-menu');
+        if (toggle && menu) {
+            toggle.addEventListener('click', function() { menu.classList.toggle('open'); });
+            document.querySelectorAll('.nav-link').forEach(function(link) {
+                link.addEventListener('click', function() { menu.classList.remove('open'); });
+            });
+        }
     </script>
 </body>
 </html>
