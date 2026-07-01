@@ -25,12 +25,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260411g">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260701">
 </head>
 <body>
     <a href="#main" class="skip-to-content">Skip to content</a>
-    <div class="bg-grid"></div>
 
     <!-- Navigation -->
     <nav class="navbar scrolled" id="navbar">
@@ -54,14 +53,12 @@
     </nav>
 
     <!-- Personal Hero -->
-    <section class="personal-hero">
+    <section class="personal-hero" id="main">
         <div class="container">
             <div class="personal-hero-content reveal">
-                <div class="hero-tag">
-                    <span class="tag-dot"></span>
-                    Beyond Work
-                </div>
-                <h1 class="personal-hero-title">A fuller picture.</h1>
+                <div class="hero-kicker">Beyond Work</div>
+                <h1 class="personal-hero-title">A fuller <span class="accent-italic">picture.</span></h1>
+                <p class="personal-tagline">— reader, writer, photographer, advocate</p>
                 <div class="personal-intro">
                     <p>
                         Outside of my work at Verizon, I'm a voracious reader, an active writer, and a dedicated advocate for the causes I care about. I publish data-driven analyses on the U.S. economy and geopolitical shifts on my <a href="https://pandrewturner.substack.com" target="_blank" rel="noopener">Substack</a>, and I volunteer as an official event photographer for <strong>Orlando Pride</strong>.
@@ -75,7 +72,7 @@
     </section>
 
     <!-- At a Glance -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">01</span>
@@ -118,7 +115,7 @@
     </section>
 
     <!-- Craft & Hobbies -->
-    <section class="section">
+    <section class="section section-alt">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">02</span>
@@ -161,7 +158,7 @@
     </section>
 
     <!-- Community & Advocacy -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">03</span>
@@ -201,7 +198,7 @@
     </section>
 
     <!-- Languages & World -->
-    <section class="section">
+    <section class="section section-alt">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">04</span>
@@ -236,68 +233,11 @@
         </div>
     </section>
 
-    <!-- Bookshelf -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-number">05</span>
-                <h2 class="section-title">On the Bookshelf</h2>
-                <div class="section-line"></div>
-            </div>
-            <p class="section-subtitle reveal">A curated slice of what I'm reading and have recently finished &mdash; heavy on foreign policy, intelligence history, economics, and the ways technology reshapes both.</p>
-            <div class="bookshelf reveal">
-                <div class="book-group">
-                    <h4>Intelligence &amp; Statecraft</h4>
-                    <ul>
-                        <li><span class="book-title">Legacy of Ashes: The History of the CIA</span><span class="book-author">Tim Weiner</span></li>
-                        <li><span class="book-title">The Sword and the Shield</span><span class="book-author">Christopher Andrew &amp; Vasili Mitrokhin</span></li>
-                        <li><span class="book-title">The Back Channel</span><span class="book-author">William J. Burns</span></li>
-                        <li><span class="book-title">Chokepoints</span><span class="book-author">Edward Fishman</span></li>
-                    </ul>
-                </div>
-                <div class="book-group">
-                    <h4>History &amp; World Order</h4>
-                    <ul>
-                        <li><span class="book-title">Iron Kingdom</span><span class="book-author">Christopher Clark</span></li>
-                        <li><span class="book-title">The Changing World Order</span><span class="book-author">Ray Dalio</span></li>
-                        <li><span class="book-title">Central and Eastern European Politics</span><span class="book-author">Wolchik &amp; Curry</span></li>
-                        <li><span class="book-title">A Promised Land</span><span class="book-author">Barack Obama</span></li>
-                    </ul>
-                </div>
-                <div class="book-group">
-                    <h4>Economics &amp; Behavior</h4>
-                    <ul>
-                        <li><span class="book-title">Thinking, Fast and Slow</span><span class="book-author">Daniel Kahneman</span></li>
-                        <li><span class="book-title">Misbehaving</span><span class="book-author">Richard Thaler</span></li>
-                        <li><span class="book-title">The Deficit Myth</span><span class="book-author">Stephanie Kelton</span></li>
-                        <li><span class="book-title">Good Economics for Hard Times</span><span class="book-author">Banerjee &amp; Duflo</span></li>
-                    </ul>
-                </div>
-                <div class="book-group">
-                    <h4>AI, Tech &amp; Society</h4>
-                    <ul>
-                        <li><span class="book-title">Why Machines Learn</span><span class="book-author">Anil Ananthaswamy</span></li>
-                        <li><span class="book-title">The Alignment Problem</span><span class="book-author">Brian Christian</span></li>
-                        <li><span class="book-title">The Age of Surveillance Capitalism</span><span class="book-author">Shoshana Zuboff</span></li>
-                    </ul>
-                </div>
-                <div class="book-group">
-                    <h4>LGBTQ+ History</h4>
-                    <ul>
-                        <li><span class="book-title">The Deviant's War</span><span class="book-author">Eric Cervini</span></li>
-                        <li><span class="book-title">Secret City</span><span class="book-author">James Kirchick</span></li>
-                        <li><span class="book-title">The Velvet Rage</span><span class="book-author">Alan Downs</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Looking Forward -->
     <section class="section">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-number">06</span>
+                <span class="section-number">05</span>
                 <h2 class="section-title">Looking Forward</h2>
                 <div class="section-line"></div>
             </div>
@@ -320,10 +260,10 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-name">Paul Andrew Turner Jr.</div>
-            <div class="footer-copy">© <span id="year"></span> — Built with rigor and care.</div>
+            <div class="footer-copy">© <span id="year"></span> — built with rigor and care, and a dog at my feet.</div>
         </div>
     </footer>
 
-    <script src="script.js?v=20260411g"></script>
+    <script src="script.js?v=20260701"></script>
 </body>
 </html>

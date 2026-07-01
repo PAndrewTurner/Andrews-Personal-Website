@@ -25,13 +25,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260411g">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260701">
 </head>
 <body>
     <a href="#hero" class="skip-to-content">Skip to content</a>
-    <!-- Background grid overlay -->
-    <div class="bg-grid"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -56,49 +54,47 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
-        <div class="container hero-container">
+        <div class="hero-container">
             <div class="hero-content reveal">
-                <div class="hero-tag">
-                    <span class="tag-dot"></span>
-                    Available for Opportunities
-                </div>
+                <div class="hero-kicker">Paul Andrew Turner Jr. — Orlando, FL</div>
                 <h1 class="hero-title">
-                    Paul Andrew<br>
-                    <span class="accent">Turner Jr.</span>
+                    Quantitative<br>
+                    <span class="accent-italic">everything.</span>
                 </h1>
-                <p class="hero-tagline">
-                    Financial Modeling &amp; FP&amp;A <span class="divider">·</span> Data Science &amp; ML <span class="divider">·</span> Applied AI
-                </p>
+                <p class="hero-tagline">from data to decisions</p>
                 <p class="hero-bio">
-                    I work and thrive at the intersection of <strong>finance, data science, and emerging technology</strong> — building financial models, forecasting customer lifetime value, and deploying ML/AI systems that sharpen how FP&amp;A teams make decisions. Currently a Corporate Financial Consultant at Verizon, following roles as Financial Analyst and Senior Financial Analyst in the same FP&amp;A organization.
+                    I work and thrive at the intersection of <strong>finance, data science, and emerging technology</strong> — building financial models, forecasting customer lifetime value, and deploying ML/AI systems that sharpen how FP&amp;A teams make decisions. Currently a Corporate Financial Consultant at Verizon.
                 </p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="stat-num">8,400+</div>
+                        <div class="stat-label">Hrs Automated / Yr</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-num">5</div>
+                        <div class="stat-label">Degrees</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-num">3</div>
+                        <div class="stat-label">FP&amp;A Roles</div>
+                    </div>
+                </div>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#projects" class="btn btn-primary">View the Work →</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
             <div class="hero-visual reveal">
                 <div class="headshot-frame">
-                    <img src="assets/Headshot.jpg" alt="Paul Andrew Turner Jr." class="headshot-img">
+                    <img src="assets/Andrew%20Headshot.PNG" alt="Paul Andrew Turner Jr." class="headshot-img">
                 </div>
-                <div class="floating-stat stat-1">
-                    <div class="stat-num">8,400+</div>
-                    <div class="stat-label">Labor Hours Automated</div>
-                </div>
-                <div class="floating-stat stat-2">
-                    <div class="stat-num">5</div>
-                    <div class="stat-label">Advanced Degrees</div>
-                </div>
+                <div class="headshot-caption">that's me ↑</div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section section-alt">
+    <section id="about" class="section">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">01</span>
@@ -113,9 +109,11 @@
                 <p>
                     What makes the work distinct is the toolkit. I pair traditional FP&amp;A rigor with <strong>machine learning, productionalized GenAI pipelines (Claude and Gemini), and SQL-first analytics</strong> across Teradata and Oracle — automating the repetitive work that slows finance teams down and freeing up capacity for the decisions that actually matter.
                 </p>
+                <blockquote class="pull-quote">"AI doesn't replace professionals — it becomes a force multiplier for them."</blockquote>
                 <p>
-                    My thesis on this work is simple: <strong>AI doesn't replace finance professionals — it becomes a force multiplier for them.</strong> I'm the go-to person on my team for automation, efficiency, and cross-functional data science collaboration, helping bring corporate finance into a new era where humans and AI work together to make faster, sharper decisions.
+                    That thesis drives everything I build. I'm the go-to person on my team for automation, efficiency, and cross-functional data science collaboration, helping bring corporate finance into a new era where humans and AI work together to make faster, sharper decisions.
                 </p>
+                <aside class="margin-note">margin note: I'm the person my team comes to when something needs automating.</aside>
                 <p>
                     My approach is grounded in a deliberate academic foundation: a <strong>Juris Master in Financial Regulation &amp; Compliance Law</strong> from the Florida State University College of Law, a <strong>Master of Science in Financial Technology</strong> from the University of Central Florida, and a <strong>Bachelor of Science in Statistics</strong> (with a minor in Computer Science) from UCF. I am currently pursuing a <strong>Master of Arts in Economics</strong> at the University of Florida, with a concentration in econometrics and data analysis.
                 </p>
@@ -246,6 +244,7 @@
                             </div>
                         </div>
                     </div>
+                    <aside class="margin-note career-note">…and yes, before finance I was a police officer. Long story — good one.</aside>
                 </div>
             </div>
 
@@ -272,7 +271,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section section-alt">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">02</span>
@@ -363,7 +362,7 @@
     </section>
 
     <!-- Honors & Affiliations Section -->
-    <section id="honors" class="section section-alt">
+    <section id="honors" class="section">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">03</span>
@@ -469,31 +468,30 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section section-alt">
+    <section id="projects" class="section">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">04</span>
                 <h2 class="section-title">Selected Projects</h2>
                 <div class="section-line"></div>
             </div>
-            <p class="section-subtitle reveal">A mix of production systems built at Verizon and graduate research from UCF — emphasizing automation, machine learning, and executive analytics.</p>
+            <p class="section-subtitle reveal">Production systems built at Verizon, independent data journalism, and graduate research from UCF — emphasizing automation, machine learning, and executive analytics.</p>
 
             <div class="projects-grid">
 
                 <article class="project-card featured reveal">
                     <div class="project-header">
-                        <div class="project-badge gold">In Progress</div>
-                        <div class="project-year">Apr 2026 — Present</div>
+                        <div class="project-badge gold">Featured · Ongoing</div>
+                        <div class="project-year">2026 — Present</div>
                     </div>
-                    <h3 class="project-title">Service Write Offs Short-Term Forecasting Model</h3>
-                    <div class="project-org">Verizon Corporate Finance · Built with Claude Code</div>
-                    <p class="project-desc">Developing a short-term forecasting model to predict service write offs for customers who voluntarily and involuntarily disconnect service from Verizon. Claude Code accelerates exploratory data analysis across Teradata tables, SQL join and query logic, preliminary forecasting, and ongoing code maintenance — a concrete example of <strong>AI as a force multiplier</strong> in corporate finance.</p>
+                    <h3 class="project-title"><a href="https://pandrewturner.github.io/corporate-pride-index/" target="_blank" rel="noopener">Corporate Pride Index ↗</a></h3>
+                    <div class="project-org">Independent Data Journalism · Built with Claude</div>
+                    <p class="project-desc">A public accountability index scoring <strong>200 major American companies</strong> from 0–100 on structural support for LGBTQ+ people — tracking <strong>686 sourced actions</strong> and penalizing post-2025 policy reversals rather than rewarding superficial gestures. Scores recompute from underlying evidence at build time, with sector comparisons, company profiles, a Hall of Honor, and a Hall of Shame.</p>
                     <div class="project-tags">
-                        <span class="tag-mono">Claude Code</span>
-                        <span class="tag-mono">Python</span>
-                        <span class="tag-mono">SQL</span>
-                        <span class="tag-mono">Teradata</span>
-                        <span class="tag-mono">Forecasting</span>
+                        <span class="tag-mono">Data Journalism</span>
+                        <span class="tag-mono">Claude</span>
+                        <span class="tag-mono">GitHub Pages</span>
+                        <span class="tag-mono">LGBTQ+ Advocacy</span>
                     </div>
                 </article>
 
@@ -548,6 +546,23 @@
                         <span class="tag-mono">TensorFlow</span>
                         <span class="tag-mono">PyTorch</span>
                         <span class="tag-mono">Sklearn</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-badge">Verizon</div>
+                        <div class="project-year">2026</div>
+                    </div>
+                    <h3 class="project-title">Service Write Offs Short-Term Forecasting Model</h3>
+                    <div class="project-org">Verizon Corporate Finance · Built with Claude Code</div>
+                    <p class="project-desc">Built a short-term forecasting model to predict service write offs for customers who voluntarily and involuntarily disconnect service from Verizon. Claude Code accelerated exploratory data analysis across Teradata tables, SQL join and query logic, preliminary forecasting, and ongoing code maintenance — a concrete example of <strong>AI as a force multiplier</strong> in corporate finance.</p>
+                    <div class="project-tags">
+                        <span class="tag-mono">Claude Code</span>
+                        <span class="tag-mono">Python</span>
+                        <span class="tag-mono">SQL</span>
+                        <span class="tag-mono">Teradata</span>
+                        <span class="tag-mono">Forecasting</span>
                     </div>
                 </article>
 
@@ -645,11 +660,28 @@
         </div>
     </section>
 
-    <!-- Writing Section -->
-    <section id="writing" class="section">
+    <!-- Beyond Work Teaser -->
+    <section id="beyond" class="section">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-number">05</span>
+                <span class="section-number">05 — Beyond Work</span>
+                <h2 class="teaser-heading">Not just spreadsheets. <a href="personal.html" class="accent-italic">A fuller picture →</a></h2>
+            </div>
+            <div class="teaser-chips reveal">
+                <a href="personal.html" class="teaser-chip">📷 Airshow photographer</a>
+                <a href="personal.html" class="teaser-chip">🏳️‍🌈 Orlando Pride volunteer</a>
+                <a href="personal.html" class="teaser-chip">🦅 Eagle Scout</a>
+                <a href="personal.html" class="teaser-chip">🐕 German Shepherd dad</a>
+                <a href="personal.html" class="teaser-chip">🌍 EN · DE · JP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section id="writing" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-number">06</span>
                 <h2 class="section-title">Writing</h2>
                 <div class="section-line"></div>
             </div>
@@ -689,15 +721,15 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-number">06</span>
+                <span class="section-number">07</span>
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="section-line"></div>
             </div>
             <div class="contact-content reveal">
-                <h3 class="contact-heading">Let's build something that matters.</h3>
+                <h3 class="contact-heading">Let's build something <span class="accent-italic">that matters.</span></h3>
                 <p class="contact-text">
                     I'm always open to conversations about machine learning in finance, regulatory technology, or unusual career paths. The fastest way to reach me is email or LinkedIn.
                 </p>
@@ -758,10 +790,10 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-name">Paul Andrew Turner Jr.</div>
-            <div class="footer-copy">© <span id="year"></span> — Built with rigor and care.</div>
+            <div class="footer-copy">© <span id="year"></span> — built with rigor and care, and a dog at my feet.</div>
         </div>
     </footer>
 
-    <script src="script.js?v=20260411g"></script>
+    <script src="script.js?v=20260701"></script>
 </body>
 </html>
